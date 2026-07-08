@@ -6,8 +6,6 @@ This task focuses on building an interactive AI chatbot application using a web-
 
 The goal of this task was to integrate language and vision capabilities into a single interface and demonstrate how different models can be used for different types of inputs.
 
----
-
 ## Technologies Used
 
 The application was built using the following tools and libraries:
@@ -15,8 +13,6 @@ The application was built using the following tools and libraries:
 - Streamlit → for creating the web interface  
 - Ollama → for running local AI models  
 - PIL (Python Imaging Library) → for handling image uploads and display  
-
----
 
 ## Models Used
 
@@ -28,7 +24,6 @@ Used for handling text-based conversations. It processes user input and generate
 
 Used for image analysis. It takes an uploaded image and generates a descriptive response based on its contents.
 
----
 
 ## Features Implemented
 
@@ -41,19 +36,12 @@ The application includes the following functionality:
 - Image analysis using a vision-language model  
 - Separate handling of text and image inputs within the same app  
 
----
-
 ## Application Flow
 
 The application first initializes a chat interface and stores conversation history using Streamlit session state.
-
 When a user enters text input, it is sent to the Llama 3 model, and the response is generated while preserving the conversation context.
-
 When an image is uploaded, it is displayed in the interface and temporarily saved. The image is then passed to the LLaVA model, which generates a description of the image.
-
 Both functionalities are handled within the same interface, allowing the user to switch between text interaction and image-based analysis seamlessly.
-
----
 
 ## Summary
 
